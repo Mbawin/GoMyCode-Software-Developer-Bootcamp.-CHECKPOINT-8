@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oline Travel Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/9f0218baf9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .customPosition {
+            position: absolute;
+            top: 70%;
+            right: 42%;
+        }
+
+        img {
+          height: 10rem;
+          width: 25rem;
+        }
+
+        h1 {
+          font-size: 100rem;
+          
+          
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LAMUSAH.</a>
+          <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #e3f2fd;">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LAMUSAH.</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Travel</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                    <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+                
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2 align-items-top" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success align-items-top" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+    <div class="grid md:grid-cols-2">
+      <div class= "rounded-md p-4 bg-center justify-center">
+        <img src="IMG-20211022-WA0020.jpg" alt="greg" class="img-thumbnail bg-center">
+      </div>
+
+      <div class="rounded-md p-4 row">
+        <div>
+        <p class="text-gray-400 max-w-[25rem] font-extrabold text-5xl">I AM GREG! and THIS IS WHERE I WRITE on travel</p>
+        </div>
+
+        <div>
+          <p class="text-gray-400 max-w-[25rem] text-2xl font-semibold hover:container">Join the FAMILY and be one of the first to know what I WRITE!</p>
+          <div class="flex"> 
+            <form action="subscribe" method="get" class="justify-start">
+              <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </form>
+            <button class="bg-blue-400 p-2 rounded-md">subscribe</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="p-2">
+      <h2 class="text-3xl font-semibold">Most Popular Blog</h2>
+    </div>
+
+    <!-- blog Section -->
+    <div class="grid md:grid-cols-3 gap-4 p-2">
+      <div class= "rounded-md p-2 bg-slate-500">
+        <p class=" text-white"> Cheap flights?</p>
+        <p class="text-gray-400 max-w-[25rem]">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+
+      <div class="bg-slate-500 rounded-md p-2 row">
+        <div>
+        <p class=" text-white"> Budget friendly cities?</p>
+        <p class="text-gray-400 max-w-[25rem]">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>  
+      </div>
+
+      <div class="bg-slate-500 rounded-md p-2">
+        <p class=" text-white"> How to Choose a Country to Visit?</p>
+        <p class="text-gray-400 max-w-[25rem]">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="container-fluid bg-slate-300 p-2">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>COPYRIGHT 2024</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="flex justify-end space-x-4">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>               
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
